@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm.PIN_changer">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="614.0" style="-fx-background-color: #242330;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="-1.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="613.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#7bdadb" />
+                        <Stop color="#1c58bf" offset="0.007662835249042145" />
+                        <Stop color="#7bdadb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Label layoutX="129.0" layoutY="73.0" prefHeight="61.0" prefWidth="276.0" style="-fx-text-fill: #22bde3; -fx-font-size: 25;" text="Enter the PIN." />
+            <TextField fx:id="textField" alignment="CENTER" layoutX="170.0" layoutY="150.0" prefHeight="25.0" prefWidth="276.0" style="-fx-border-color: #22bde3; -fx-background-color: none; -fx-border-radius: 5; -fx-text-fill: white;" />
+            <Button layoutX="258.0" layoutY="200.0" mnemonicParsing="false" onAction="#pinChanger" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #22bde3; -fx-text-fill: white;" text="Enter" />
+            <Label alignment="CENTER" layoutX="161.0" layoutY="246.0" prefHeight="41.0" prefWidth="289.0" style="-fx-text-fill: #22bde3;" text="Note: The digits should not repeat" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -33,13 +33,18 @@ public class Withdrawal {
         String executeTable = "UPDATE bank_data SET bank_balance= ? WHERE full_name=?";
         String text = textField.getText();
         amount = Integer.parseInt(text);
-        if (balance - 1000 > amount && amount != 0) {
+        if (balance > amount && amount != 0 && amount >1000) {
             balance = balance - amount;
             PreparedStatement preparedStatement = connection.prepareStatement(executeTable);
             preparedStatement.setInt(1, balance);
             preparedStatement.setString(2, name);
             int rows = preparedStatement.executeUpdate();
             showFinalPage(event);
+        }else{
+            Alert alert=new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Widthdrawal failure");
+            alert.setContentText("Transaction failed");
+            alert.showAndWait();
         }
     }
     public void showFinalPage(ActionEvent event) throws IOException{

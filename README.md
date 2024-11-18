@@ -8,9 +8,7 @@ This is an ATM system application developed using **JavaFX** for the graphical u
 - Check account balance.
 - Withdraw cash (with limit validation).
 - Deposit funds into the account.
-- Transfer funds between accounts.
-- Account creation (admin functionality).
-- Simple transaction history logging.
+- Changing PIN for security purpose
 
 ## Technologies Used
 - **JavaFX**: For building the graphical user interface (GUI).

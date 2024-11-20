@@ -13,10 +13,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.*;
 
-abstract class Transaction{
-    abstract void showFinalPage(ActionEvent event) throws IOException;
-    abstract void BackTrack(ActionEvent event) throws IOException;
-}
 public class Withdrawal extends Transaction {
     int balance;
     int amount;

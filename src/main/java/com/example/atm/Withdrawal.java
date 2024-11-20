@@ -13,7 +13,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.sql.*;
 
-public class Withdrawal {
+abstract class Transaction{
+    public void showFinalPage();
+    public void BackTrack();
+}
+public class Withdrawal extends Transaction {
     int balance;
     int amount;
     String name;

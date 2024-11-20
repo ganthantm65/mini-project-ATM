@@ -10,6 +10,11 @@ import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import java.io.IOException;
 
+abstract class Transaction{
+    abstract void showFinalPage(ActionEvent event) throws IOException;
+    abstract void BackTrack(ActionEvent event) throws IOException;
+}
+
 public class SecondPageController{
     private String name;
     private int balance;

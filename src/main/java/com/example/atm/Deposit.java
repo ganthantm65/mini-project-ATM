@@ -15,7 +15,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class Deposit {
+public class Deposit extends Transaction{
     int balance;
     int amount;
     String name;

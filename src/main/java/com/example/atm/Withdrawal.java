@@ -14,8 +14,8 @@ import java.io.IOException;
 import java.sql.*;
 
 abstract class Transaction{
-    public void showFinalPage();
-    public void BackTrack();
+    abstract void showFinalPage(ActionEvent event) throws IOException;
+    abstract void BackTrack(ActionEvent event) throws IOException;
 }
 public class Withdrawal extends Transaction {
     int balance;

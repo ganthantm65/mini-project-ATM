@@ -11,9 +11,9 @@ import javafx.event.ActionEvent;
 import java.io.IOException;
 
 public class SecondPageController{
-    String name;
-    int balance;
-    long phone,account;
+    private String name;
+    private int balance;
+    private long phone,account;
     private Stage stage;
     private Scene scene;
 

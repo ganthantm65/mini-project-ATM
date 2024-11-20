@@ -52,6 +52,7 @@ public class Withdrawal extends Transaction {
             alert.showAndWait();
         }
     }
+    @override
     public void showFinalPage(ActionEvent event) throws IOException{
         FXMLLoader fxmlLoader =new FXMLLoader(atm.class.getResource("final page.fxml"));
         Parent root=fxmlLoader.load();
@@ -60,6 +61,7 @@ public class Withdrawal extends Transaction {
         stage.setScene(scene);
         stage.show();
     }
+    @override
     public void BackTrack(ActionEvent event) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(atm.class.getResource("first-page.fxml"));
         scene = new Scene(fxmlLoader.load(), 600, 400);
